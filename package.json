@@ -1,6 +1,6 @@
 {
-  "name": "tipranks-api-v2",
-  "version": "1.0.5",
+  "name": "tipranks-api-v2-no-cors",
+  "version": "1.0.6",
   "description": "Tipranks.com API",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janlukasschroeder/tipranks-api-v2.git"
+    "url": "git+https://github.com/Stuchetz/tipranks-api-v2-no-cors.git"
   },
   "keywords": [
     "Tipranks",
@@ -17,9 +17,9 @@
   "author": "Jan Schroeder",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/janlukasschroeder/tipranks-api-v2/issues"
+    "url": "https://github.com/Stuchetz/tipranks-api-v2-no-cors/issues"
   },
-  "homepage": "https://github.com/janlukasschroeder/tipranks-api-v2#readme",
+  "homepage": "https://github.com/Stuchetz/tipranks-api-v2-no-cors#readme",
   "dependencies": {
     "moment": "^2.22.2"
   },
