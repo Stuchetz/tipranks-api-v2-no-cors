@@ -65,6 +65,7 @@ const get = (retry = 0, query, resolve, reject) => {
     port: '443',
     hostname: parts[2],
     path: parts.reduce((a, b, i) =>  (i > 2) ? a + '/' + b : ''),
+    mode: 'no-cors',
     headers
   };
 
