@@ -2,9 +2,6 @@ const moment = require('moment');
 const https = require('https');
 const express = require('express');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
-
 /**
  *
  * @param t0Value
@@ -47,6 +44,9 @@ exports.median = (values) => {
  * @returns {Promise}
  */
 exports.fetch = (query) => {
+  const app = express();
+  const PORT = process.env.PORT || 3000;
+
   app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     next();

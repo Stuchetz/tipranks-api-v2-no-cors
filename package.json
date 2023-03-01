@@ -1,6 +1,6 @@
 {
   "name": "tipranks-api-v2-no-cors",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Tipranks.com API",
   "main": "index.js",
   "scripts": {
