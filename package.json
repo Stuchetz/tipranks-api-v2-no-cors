@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Stuchetz/tipranks-api-v2-no-cors#readme",
   "dependencies": {
+    "async_hooks": "^1.0.0",
     "moment": "^2.22.2"
   },
   "bin": {
