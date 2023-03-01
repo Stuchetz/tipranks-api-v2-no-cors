@@ -3,14 +3,7 @@ const https = require('https');
 const express = require('express');
 
 const app = express();
-
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
-
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 /**
  *
@@ -54,6 +47,11 @@ exports.median = (values) => {
  * @returns {Promise}
  */
 exports.fetch = (query) => {
+  app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+  });
+
   app.get(query, (req, res) => {
     request({ url: query }, (error, response, body) => {
       if (error || response.statusCode !== 200) {
@@ -63,6 +61,8 @@ exports.fetch = (query) => {
       res.json(JSON.parse(body));
     });
   });
+
+  app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
   return new Promise((res, rej) => {
     get(0, query, res, rej);
